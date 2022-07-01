@@ -1,0 +1,48 @@
+@import "config/reset";
+
+html{
+  font-size:62.5%;
+}
+body{
+  font-size:1.6rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+  color:#333;
+}
+
+.ly-wrapper{
+  margin:3rem 4rem;
+}
+
+.ly-section{
+  margin:3rem 4rem;
+
+  ._heading{
+    font-size:2.0rem;
+    margin:4rem 0 1rem;
+  }
+}
+
+.c-line{
+  background-color:#ccc;
+  height: 1px;
+  border:0;
+}
+
+.grd-wrap{
+  margin-bottom:1vw;
+  >div{
+    background-color: #eee;
+    width:100%;
+    aspect-ratio: 16 / 9;
+    &:nth-child(even){
+      background-color: #ccc;
+    }
+  }
+
+  &._1-item{
+    >div{
+      aspect-ratio: 16 / 4;
+    }
+  }
+}

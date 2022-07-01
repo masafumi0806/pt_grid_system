@@ -1,0 +1,98 @@
+
+.grd-wrap {
+  display: grid;
+  width: 100%;
+
+  &._1-item {
+    grid-template-columns: 1fr;
+  }
+
+  &._2-item {
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+
+  &._3-item {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+  }
+
+  &._4-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2vw;
+  }
+
+  &._5-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2vw;
+  }
+
+  &._6-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5vw;
+  }
+
+  &._7-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5vw;
+  }
+
+  &._8-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+  }
+
+  &._9-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+  }
+
+  &._10-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+  }
+
+  //余白リセット
+  &._gap-0 {
+    gap: 0;
+  }
+
+  &._gap-row-0 {
+    row-gap: 0;
+  }
+
+  &._gap-column-0 {
+    column-gap: 0;
+  }
+
+  //強調型
+  &._5-item-em {
+    gap: 1vw;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "_g1 _g2 _g3"
+      "_g1 _g4 _g5";
+
+    ._g1 {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    ._g2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    ._g3 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+
+    ._g4 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    ._g5 {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+
+  }
+}
